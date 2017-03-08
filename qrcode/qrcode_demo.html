@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>生成二维码</title>
+
+    <script src="qrcode.js"></script>
+</head>
+<body>
+    <div>
+        <h1>生成二维码</h1>
+        <p>
+            参考<a href="http://code.ciaoca.com/javascript/qrcode/" target="_blank">
+            http://code.ciaoca.com/javascript/qrcode/
+            </a>
+        </p>
+        <h3>1.引用qrcode.js</h3>
+        <code style="color:blue;">
+            &lt;script src="qrcode.js" &gt;&lt;/script&gt;
+        </code>
+        <p>github下载地址：
+            <a href="https://githubwf.github.io/primary_web/qrcode/qrcode.js" target="_blank">
+                https://githubwf.github.io/primary_web/qrcode/qrcode.js
+            </a>
+        </p>
+        <h3>2.在html页面创建id为qrcode的标签</h3>
+        <p style="color:blue;">&lt;div id="qrcode"&gt;&lt;/div&gt;</p>
+        <p>可以使用&lt;div&gt;，&lt;p&gt;，&lt;span&gt;等</p>
+        <h3>3.使用js调用创建二维码方法</h3>
+        <p>
+            方式一：
+            <code>new QRCode(document.getElementById('qrcode'),'二维码内容');</code>
+        </p>
+        <p>
+            方式二：<br/>
+            <code>var qrcode = new QRCode('qrcode',{</code><br/>
+            <code>&#12288;text:'二维码内容',</code><br/>
+            <code>&#12288;width:256,</code><br/>
+            <code>&#12288;height:256,</code><br/>
+            <code>&#12288;colorDark : '#000000',</code><br/>
+            <code>&#12288;correctLevel : QRCode.CorrectLevel.H</code><br/>
+            <code>    });</code>
+
+        </p>
+        <h3>4.结果</h3>
+        <div id="qrcode"></div>
+    </div>
+
+<script>
+//方式一
+//    new QRCode(document.getElementById('qrcode'),'二维码内容');
+//方式二
+    var qrcode = new QRCode('qrcode',{
+        text:'二维码内容',
+        width:256,
+        height:256,
+        colorDark : '#000000',
+        correctLevel : QRCode.CorrectLevel.H
+    });
+//    qrcode.clear();
+//    qrcode.makeCode('');
+</script>
+</body>
+</html>
