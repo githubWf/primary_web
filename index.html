@@ -1,13 +1,323 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8"/>
-    <title>index</title>
-  </head>
-  <body>
-    <h1>HELLO word !哈哈</h1>
-  
-  
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <title>吴锋</title>
 
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        #left{
+            float:left;
+            width:20%;
+            height:200px;
+        }
+        #content{
+            float:left;
+            width:60%;
+        }
+        #head{
+            height:100px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;/*chrome失效*/
+            padding-top:20px;
+            font-size:3em;
+            font-weight:bold;
+            background: radial-gradient(#ACD6FF,#ffffff);
+            max-width:1090px;
+        }
+        #profile{
+            float:left;
+            width:250px;
+        }
+        #photo{
+            float:left;
+            width:220px;
+            /*height:220px;*/
+            margin:5px;
+            box-shadow: 2px 2px 5px #2894FF;
+        }
+        #information{
+            float:left;
+            width:220px;
+            /*height:230px;*/
+            margin:5px;
+            background: #66B3FF;
+            box-shadow: 2px 2px 5px #ADADAD;
+        }
+        #university{
+            float:left;
+            width:220px;
+            /*height:170px;*/
+            margin:5px;
+            background: #66B3FF;
+            box-shadow: 2px 2px 5px #ADADAD;
+        }
+        /*#links{
+            float:left;
+            width:220px;
+            height:160px;
+            margin:5px;
+            background: #66B3FF;
+            box-shadow: 2px 2px 5px #ADADAD;
+        }*/
+        #work{
+            float:left;
+            width:820px;
+            border:3px solid #66B3FF;
+            box-shadow: 2px 2px 5px #ADADAD;
+            min-width:580px;
+        }
+        #skill{
+            margin-bottom:3px;
+            background: #ACD6FF;
+            padding:1px 0 2px 5px;
+        }
+        #experience{
+            margin-bottom:3px;
+            background: #ACD6FF;
+            padding:1px 0 2px 5px;
+        }
+        #project{
+            margin-bottom:3px;
+            background: #ACD6FF;
+            padding:1px 0 2px 5px;
+        }
+        .item-head{
+            margin-left: 5px;
+            font-weight:bold;
+        }
+        #valuation{
+            background: #ACD6FF;
+            padding:1px 0 2px 5px;
+        }
+        #skill li,#experience li{
+            margin:6px;
+        }
+        .project-item li{
+            margin-left:-10px;
+        }
+        .td-italic{
+            font-style: italic;
+        }
+
+        /*屏幕自适应设计*/
+        @media(max-width:1800px){
+            #left{
+                width:18%;
+            }
+            #content{
+                width:70%;
+            }
+        }
+        @media(max-width:1660px){
+            #left{
+                width:16%;
+            }
+            #content{
+                width:80%;
+            }
+        }
+        @media(max-width:1560px){
+            #left{
+                width:12%;
+            }
+            #content{
+                width:86%;
+            }
+        }
+        @media(max-width:1460px){
+            #left{
+                width:8%;
+            }
+            #content{
+                width:90%;
+            }
+        }
+        @media(max-width:1360px){
+            #left{
+                width:4%;
+            }
+            #content{
+                width:90%;
+            }
+        }
+        @media(max-width:1240px){
+            #left{
+                width:0;
+            }
+            #content{
+                width:100%;
+            }
+        }
+        @media(max-width:1190px){
+            #left{
+                width:0;
+            }
+            #content{
+                width:100%;
+                border:1px solid;
+            }
+            #profile{
+                width:100%;
+            }
+            #photo{
+                display:none;
+            }
+            #information{
+                width:100%;
+                margin:2px;
+            }
+            #university{
+                width:100%;
+                margin:2px;
+            }
+            #work{
+                width:100%;
+            }
+            .iteam{
+                width:300px;
+                float:left;
+            }
+            #xhu_logo{
+                display:none;
+            }
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div id="page">
+        <div id="left"></div>
+        <div id="content">
+            <div id="head">个人简历</div>
+            <div id="profile">
+                <div id="photo">
+                    <img alt="头像"  width="220px" height=="220px" src="http://img2.duitang.com/uploads/item/201205/05/20120505092411_tMwd8.thumb.600_0.jpeg"/>
+                </div>
+                <div id="information">
+                    <p class="iteam"> <span class="item-head">姓名：</span><span class="item-content">吴锋</span></p>
+                    <p class="iteam"> <span class="item-head">性别：</span><span class="item-content">男</span></p>
+                    <p class="iteam"> <span class="item-head">民族：</span><span class="item-content">汉</span></p>
+                    <p class="iteam"> <span class="item-head">电话：</span><span class="item-content">18380462011</span></p>
+                    <p class="iteam"> <span class="item-head">Email：</span>
+                        <span class="item-content" style="font-size:0.8em;">18380462011@163.com</span>
+                    </p>
+                    <p class="iteam"> <span class="item-head">出生日期：</span><span class="item-content">1992.09.07</span></p>
+                </div>
+                <div id="university">
+                    <p id="xhu_logo" class="iteam" align="center"><img alt="西华大学logo" src="xhulogo.jpg"/></p>
+                    <p class="iteam"><span class="item-head">学校：</span><span class="item-content">西华大学</span></p>
+                    <p class="iteam"><span class="item-head">专业：</span><span class="item-content">软件工程</span></p>
+                    <p class="iteam"><span class="item-head">CET：</span><span class="item-content">4</span></p>
+                    <p class="iteam"><span class="item-head">时间：</span><span class="item-content">2012.09	&sim; 2016.06</span></p>
+                </div>
+                <!--<div id="links">
+                    <p class="iteam"><span class="item-head">个人博客：</span><span class="item-content"></span></p>
+                    <p class="iteam"><span class="item-head">个人网站：</span><span class="item-content"></span></p>
+                </div>-->
+            </div>
+
+            <div id="work">
+                <div id="skill">
+                    <div><h3>个人技能：</h3></div>
+                    <ul type="square">
+                        <li>熟练使用 Webstorm，Dreamweaver，NotePad++，MyEclipse 等开发工具。</li>
+                        <li> 熟练使用 SVN，PowerDesigner，Visio 辅助开发工具。</li>
+                        <li> 熟练掌握 HTML,CSS,JavaScript 等前端语言。</li>
+                        <li> 熟练使用 DIV+CSS 布局，以及 BootStrap 做响应式界面并美化界面。</li>
+                        <li> 熟练使用 Angularjs，Jquery 处理请求和响应的数据。</li>
+                        <li> 熟悉 AJAX，JSON，Http，Gulp 等技术的使用。</li>
+                        <li> 熟悉 JAVA 基础,有 SSH，SSM 等 JavaEE 框架使用经验。</li>
+                        <li> 熟悉 express，http，q 等 node.js 常用模块。</li>
+                        <li> 熟练使用 SQL 语句操作数据库。</li>
+                        <li> 熟练使用高德地图 API。</li>
+                    </ul>
+
+                </div>
+                <div id="experience">
+                    <div><h3>工作经历：</h3></div>
+                    <ul>
+                        <li style="list-style:none;">2015.12 &sim;
+                            2017.02 <span style="margin-left:30px;margin-right:30px;">北京车源科技有限公司</span>
+                            前端开发工程师
+                        </li>
+                    </ul>
+                </div>
+                <div id="project">
+                    <div><h3>项目经验：</h3></div>
+                    <div class="project-item">
+                        <p class="item-head">2016/9-2017/2 基于位置的服务（LBS）</p>
+                        <table>
+                            <tr>
+                                <td class="item-head td-italic" width="100px;">所属公司：</td>
+                                <td>北京车源科技有限公司</td>
+                            </tr>
+                            <tr>
+                                <td class="item-head td-italic" valign="top">项目描述：</td>
+                                <td>一个监管车辆运输车在途位置信息的系统，需要在地图上显示车辆的位置，并有数据的统计分析。目前该系统正常使用。</td>
+                            </tr>
+                            <tr>
+                                <td class="item-head td-italic" valign="top">责任描述：</td>
+                                <td>
+                                    此项目开发人员只有两人，本人主要负责前端开发，开发文档编写。
+                                    <ol type="A">
+                                        <li>初始阶段结合系统的主框架，使用AngularJs完善前端框架。</li>
+                                        <li>开发阶段使用DIV+CSS布局，结合BootStrap和CSS原生样式设计响应式界面并美化，用于适应PC端和移动端。</li>
+                                        <li>使用AngularJs把前端数据处理成json形式，与后端数据交互使用AngularJs的$http模块，界面的跳转使用$state模块。</li>
+                                        <li>大量的高德地图API调用。</li>
+                                        <li>负责基础数据的sql语句编写。</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="project-item">
+                        <p class="item-head">2015/12-2016/9 运输管理系统（TMS）</p>
+                        <table>
+                            <tr>
+                                <td class="item-head td-italic" width="100px;">所属公司：</td>
+                                <td>北京车源科技有限公司</td>
+                            </tr>
+                            <tr>
+                                <td class="item-head td-italic" valign="top">项目描述：</td>
+                                <td>一个监管商品车从主机厂出发到4S店整个过程的系统，其过程类似快递的运输，涉及到多个地域，
+                                    多个岗位的人操作，兼顾PC端和移动端。目前该系统冻结。</td>
+                            </tr>
+                            <tr>
+                                <td class="item-head td-italic" valign="top">责任描述：</td>
+                                <td>
+                                    <span>五人项目，本人负责前端开发。</span>
+                                    <ol type="A">
+                                        <li>使用DIV+CSS布局，边学Bootstrap边运用它设计界面，美化界面。</li>
+                                        <li>边学习Angularjs边运用它的MVVM模式，快速处理前端的数据，把页面数据处理成json格式传向服务器，获取服务器的响应数据，部分要使用算法分析处理。</li>
+                                        <li>文件的上传下载功能。</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+                <div id="valuation">
+                    <div><h3>自我评价：</h3></div>
+                    <p>&#12288;&#12288;本人学习能力强，诚实守信，遵守纪律，对待工作认真负责，有较强的环境 适应能力。</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="right"></div>
+    </div>
+
+<script>
+
+</script>
+
+</body>
 </html>
